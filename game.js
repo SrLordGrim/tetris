@@ -113,7 +113,7 @@ function drawPiece() {
   for (let row = 0; row < currentPiece.blocks.length; row++) {
     for (let col = 0; col < currentPiece.blocks[0].length; col++) {
         if (currentPiece.blocks[row][col]) {
-        html += <div class="block ${currentPiece.color}" style="top:${(currentPiece.y + row) * blockSize}px;left:${(currentPiece.x + col) * blockSize}px;"></div>;
+        html += `<div class="block ${currentPiece.color}" style="top:${(currentPiece.y + row) * blockSize}px;left:${(currentPiece.x + col) * blockSize}px;"></div>`;
         }
         }
         }
